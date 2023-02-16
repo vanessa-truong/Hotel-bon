@@ -123,8 +123,8 @@ header section:nth-of-type(1) article {
 header section:nth-of-type(1) article a {
     text-decoration: none;
     color: #816234;
-    font-size: 2rem;
-    padding-right: 30px;
+    font-size: 2.1rem;
+    padding-right: 35px;
 }
 
 header section:nth-of-type(1) article a:hover {
@@ -142,6 +142,7 @@ header section:nth-of-type(2) {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter: brightness(0.9);
 }
 
 header section:nth-of-type(2) {
@@ -297,8 +298,8 @@ footer {
     justify-content: space-between;
     padding-left: 12vh;
     padding-right: 12vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 8vh;
+    padding-bottom: 17vh;
 }
 
 footer nav {
@@ -345,30 +346,42 @@ footer form div h4 {
 
 /* ======= MEDIA QUERIES ====== */
 
+
+
 @media only screen and (max-width: 600px) {
+
+
+
+    header section:nth-of-type(1) article {
+        margin-left: 1.5vh;
+        margin-right: 1.5vh;
+    }
+
+    header section:nth-of-type(1) article a {
+        font-size: 1.2rem;
+    }
+
+
+
+
     main section:nth-of-type(2) article:nth-of-type(1) {
-        display: block;
+        flex-direction: column;
+        align-items: center;
     }
 
     main section:nth-of-type(2) article:nth-of-type(1) div {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 33vh;
+        width: 80%;
+    }
+
+    main section:nth-of-type(2) article:nth-of-type(2) div {
+        width: 80%;
     }
 
 
 
     main section:nth-of-type(2) article:nth-of-type(2) {
-        display: block;
-    }
-
-    main section:nth-of-type(2) article:nth-of-type(2) div {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    main section:nth-of-type(2) article:nth-of-type(2) div:nth-of-type(1) {
-        margin-bottom: 33vh;
+        flex-direction: column;
+        align-items: center;
     }
 
 
